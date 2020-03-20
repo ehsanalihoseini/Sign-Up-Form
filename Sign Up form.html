@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Sign-up</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #344a72;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        height: 1000px;
+      }
+      a {
+        text-decoration: none;
+      }
+      #container {
+        max-width: 340px;
+        margin: 50px auto;
+        padding: 5px;
+      }
+      .form-wrap {
+        border: solid white;
+        background: white;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+      .form-wrap a {
+        color:rgb(102, 122, 235);
+      }
+      .form-wrap a:hover {
+        color: darkblue;
+      }
+      .form-wrap .form-group {
+        margin-bottom: 20px;
+      }
+      .form-wrap .form-group label {
+        display: block;
+        text-align: left;
+      }
+      .form-wrap .form-group input {
+        width: 100%;
+        border-radius: 4px;
+        height: 35px;
+      }
+      .form-wrap h1, .form-wrap p {
+        text-align: center;
+      }
+      .form-wrap p {
+        margin-bottom: 25px;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        color: white;
+        background-color: #49c1a2;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        height: 35px;
+        cursor: pointer;
+      }
+      .form-wrap button:hover {
+        color: #37a08e;
+      }
+      .form-wrap .button-text {
+        font-size: 13px;
+      }
+      footer {
+        text-align: center;
+      }
+
+      footer a {
+        color: #49c1a2;
+      }
+
+      footer a:hover {
+        color: rgb(15, 196, 15);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Sign UP</h1>
+        <p>Its free and only takes a minute</p>
+
+        <form action="process.php">
+          <div class="form-group"><b>
+            <label for="fname">First Name</label>
+            <input type="text" placeholder=" Enter Name" />
+          </div>
+
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" placeholder=" Enter LastName" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder=" Enter E-mail"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder=" Enter Password"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="Cpassword">Confirm Password</label>
+            <input
+              type="password"
+              name="Cpassword"
+              id="Cpassword"
+              placeholder=" Repeat Password"
+            />
+          </div></b>
+
+          <button type="submit" class="btn">Sign Up</button>
+          <p class="button-text">
+            by clicking the sign up button you agree to our
+            <a href="#"> Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>Already have an account? <a href="#">Login Here</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
